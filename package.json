@@ -1,0 +1,15 @@
+{
+    "name": "wp5-mfe-starter",
+    "private": true,
+    "scripts": {
+        "serve": "wsrun --parallel dev",
+        "dev": "concurrently \"wsrun --parallel dev\" \"wsrun --parallel serve\""
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "concurrently": "^7.3.0",
+        "wsrun": "^5.2.0"
+    }
+}
