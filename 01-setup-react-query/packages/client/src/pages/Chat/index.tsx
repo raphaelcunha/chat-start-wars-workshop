@@ -4,6 +4,7 @@ import ReceiveMessage from "components/ReceiveMessage";
 import SentMessage from "components/SentMessage";
 import type IMessage from "types/messages";
 import chatApi from "api/chat";
+import LoaderPage from "components/LoaderPage";
 
 const useLogged = {
   id: 2,
@@ -18,7 +19,7 @@ function Chat() {
     }
   );
 
-  if (isLoadingMessages) return <div>Loading...</div>;
+  if (isLoadingMessages) return <LoaderPage />;
 
   return (
     <div className="container mx-auto h-screen flex justify-center pt-10">

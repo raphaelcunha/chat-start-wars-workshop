@@ -42,7 +42,7 @@ async function seed() {
 
   await db.query(sql`
       INSERT INTO messages (id, userId, message, status) VALUES 
-      (${uuidv4()}, 1, 'I am your father!', 'received'), 
+      (${uuidv4()}, 1, 'I am your father  222222!', 'received'), 
       (${uuidv4()}, 2, 'I hate you!', 'sent')
     `);
 }

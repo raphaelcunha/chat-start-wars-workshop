@@ -2,8 +2,11 @@
     "name": "wp5-mfe-starter",
     "private": true,
     "scripts": {
+        "build": "wsrun --parallel build",
         "serve": "wsrun --parallel dev",
-        "dev": "concurrently \"wsrun --parallel dev\" \"wsrun --parallel serve\""
+        "dev": "concurrently \"wsrun --parallel dev\"",
+        "dev:backend": "cd packages/backend && npm run dev",
+        "dev:client": "cd packages/client && npm run dev"
     },
     "workspaces": [
         "packages/*"

@@ -4,6 +4,11 @@ import db, { sql } from "./db/setup.mjs";
 
 const app = express();
 
+// create delay middleware
+app.use(function (req, res, next) {
+  setTimeout(next, 3000);
+});
+
 // remove cors
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");

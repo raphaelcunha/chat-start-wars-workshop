@@ -25,7 +25,7 @@ function Rooms(): JSX.Element {
           </div>
         </div>
 
-        <div className="card bg-base-100 shadow-xl hover:bg-base-200 border border-slate-700">
+        {/* <div className="card bg-base-100 shadow-xl hover:bg-base-200 border border-slate-700">
           <div className="card-body flex">
             <div className="flex flex-col items-center">
               <img src={ImgReturnJedi} className="h-60 rounded-2xl" />
@@ -37,7 +37,7 @@ function Rooms(): JSX.Element {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
